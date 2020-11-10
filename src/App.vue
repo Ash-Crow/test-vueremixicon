@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <p>Here a couple icons:</p>
+    <vue-remixicon name="bank" type="line" />
+    <vue-remixicon name="building" type="fill" />
+    <p>Above, a couple icons.</p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import vueRemixicon from "@katalonne/vue-remixicon";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    vueRemixicon,
+  },
+};
 </script>
 
 <style>
